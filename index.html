@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Manual de Reparación de Autos y Motos con guías, consejos y un foro de comunidad.">
+    <meta name="keywords" content="reparación, autos, motos, mantenimiento, guías, foro">
+    <title>Manual de Reparación de Autos y Motos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #333;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #007BFF; /* Cambiar color al pasar el mouse */
+        }
+        section {
+            padding: 20px;
+            background: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h3 {
+            font-size: 24px; /* Tamaño de fuente grande para las marcas */
+            color: #333; /* Color del texto */
+        }
+        ul {
+            list-style-type: none; /* Eliminar viñetas */
+            padding: 0; /* Sin padding */
+        }
+        ul li {
+            margin: 5px 0; /* Espaciado entre los modelos */
+        }
+        a {
+            text-decoration: none; /* Sin subrayado */
+            color: #007BFF; /* Color del enlace */
+        }
+        a:hover {
+            text-decoration: underline; /* Subrayar al pasar el mouse */
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
+    <script>
+        function buscarModelo() {
+            const input = document.getElementById('buscador').value.toLowerCase();
+            const modelos = document.querySelectorAll('.modelo');
+            modelos.forEach(modelo => {
+                const texto = modelo.textContent.toLowerCase();
+                modelo.style.display = texto.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Manual de Reparación de Autos y Motos</h1>
+</header>
+
+<nav>
+    <a href="#modelos">Modelos y Marcas</a>
+    <a href="#mantenimiento">Consejos de Mantenimiento</a>
+    <a href="#guias">Guías de Reparación</a>
+    <a href="#foro">Foro de la Comunidad</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="modelos">
+    <h2>Modelos y Marcas</h2>
+    
+    <input type="text" id="buscador" placeholder="Buscar modelo..." onkeyup="buscarModelo()" />
+
+    <h3><strong>Toyota</strong></h3>
+    <ul>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_corolla.pdf">Corolla</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_camry.pdf">Camry</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_hilux.pdf">Hilux</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_rav4.pdf">RAV4</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_yaris.pdf">Yaris</a></li>
+        <li class ="modelo"><a href="https://www.ejemplo.com/manual_avalon.pdf">Avalon</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_sienna.pdf">Sienna</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_4runner.pdf">4Runner</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_tacoma.pdf">Tacoma</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_tundra.pdf">Tundra</a></li>
+    </ul>
+    
+    <h3><strong>Ford</strong></h3>
+    <ul>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_fiesta.pdf">Fiesta</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_focus.pdf">Focus</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_mustang.pdf">Mustang</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_escape.pdf">Escape</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_explorer.pdf">Explorer</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_edge.pdf">Edge</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_f150.pdf">F-150</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_superduty.pdf">Super Duty</a></li>
+    </ul>
+    
+    <h3><strong>Chevrolet</strong></h3>
+    <ul>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_spark.pdf">Spark</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_cruze.pdf">Cruze</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_silverado.pdf">Silverado</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_trailblazer.pdf">Trailblazer</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_equinox.pdf">Equinox</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_impala.pdf">Impala</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_camaro.pdf">Camaro</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_blazer.pdf">Blazer</a></li>
+    </ul>
+    
+    <h3><strong>Honda</strong></h3>
+    <ul>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_civic.pdf">Civic</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_accord.pdf">Accord</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_crv.pdf">CR-V</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_hrv.pdf">HR-V</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_odyssey.pdf">Odyssey</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_fit.pdf">Fit</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_pilot.pdf">Pilot</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_ridgeline.pdf">Ridgeline</a></li>
+    </ul>
+
+    <h3><strong>Yamaha</strong></h3>
+    <ul>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_yzf_r1.pdf">YZF-R1</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_yzf_r6.pdf">YZF-R6</a></ li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_mt07.pdf">MT-07</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_mt09.pdf">MT-09</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_fz09.pdf">FZ-09</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_xsr900.pdf">XSR900</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_yzf_r3.pdf">YZF-R3</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_yz250.pdf">YZ250</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_yz450f.pdf">YZ450F</a></li>
+    </ul>
+
+    <h3><strong>Honda Motos</strong></h3>
+    <ul>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_cb500.pdf">CB500</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_cbr600.pdf">CBR600</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_crf450.pdf">CRF450</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_grom.pdf">Grom</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_cb1000r.pdf">CB1000R</a></li>
+        <li class="modelo"><a href="https://www.ejemplo.com/manual_goldwing.pdf">Gold Wing</a></li>
+    </ul>
+</section>
+
+<section id="mantenimiento">
+    <h2>Consejos de Mantenimiento</h2>
+    <p>Asegúrate de realizar un mantenimiento regular de tu vehículo para prolongar su vida útil. Aquí hay algunos consejos:</p>
+    <ul>
+        <li>Revisa el aceite del motor cada 5,000 km.</li>
+        <li>Verifica la presión de los neumáticos mensualmente.</li>
+        <li>Cambia los filtros de aire y combustible según las recomendaciones del fabricante.</li>
+        <li>Inspecciona los frenos y las luces regularmente.</li>
+        <li>Realiza un chequeo completo antes de viajes largos.</li>
+    </ul>
+</section>
+
+<section id="guias">
+    <h2>Guías de Reparación</h2>
+    <p>Encuentra guías detalladas para realizar reparaciones comunes en tu vehículo:</p>
+    <ul>
+        <li><a href="https://www.ejemplo.com/guia_frenos.pdf">Guía de Reparación de Frenos</a></li>
+        <li><a href="https://www.ejemplo.com/guia_baterias.pdf">Guía de Cambio de Batería</a></li>
+        <li><a href="https://www.ejemplo.com/guia_aceite.pdf">Guía de Cambio de Aceite</a></li>
+        <li><a href="https://www.ejemplo.com/guia_filtro.pdf">Guía de Cambio de Filtro de Aire</a></li>
+        <li><a href="https://www.ejemplo.com/guia_candela.pdf">Guía de Cambio de Bujías</a></li>
+    </ul>
+</section>
+
+<section id="foro">
+    <h2>Foro de la Comunidad</h2>
+    <p>Únete a nuestro foro para discutir problemas y soluciones con otros entusiastas de la reparación de vehículos.</p>
+    <a href="https://www.ejemplo.com/foro">Visita el Foro</a>
+</section>
+
+<footer>
+    <p>&copy; 2023 Manual de Reparación de Autos y Motos. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
