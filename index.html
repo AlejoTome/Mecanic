@@ -19,6 +19,11 @@
             padding: 10px 0;
             text-align: center;
         }
+        header input {
+            margin-top: 10px;
+            padding: 5px;
+            font-size: 14px;
+        }
         nav {
             margin: 20px 0;
         }
@@ -29,7 +34,7 @@
         }
         nav a:hover {
             text-decoration: underline;
-            color: #007BFF; /* Cambiar color al pasar el mouse */
+            color: #007BFF;
         }
         section {
             padding: 20px;
@@ -48,22 +53,22 @@
             width: 100%;
         }
         h3 {
-            font-size: 24px; /* Tamaño de fuente grande para las marcas */
-            color: #333; /* Color del texto */
+            font-size: 24px;
+            color: #333;
         }
         ul {
-            list-style-type: none; /* Eliminar viñetas */
-            padding: 0; /* Sin padding */
+            list-style-type: none;
+            padding: 0;
         }
         ul li {
-            margin: 5px 0; /* Espaciado entre los modelos */
+            margin: 5px 0;
         }
         a {
-            text-decoration: none; /* Sin subrayado */
-            color: #007BFF; /* Color del enlace */
+            text-decoration: none;
+            color: #007BFF;
         }
         a:hover {
-            text-decoration: underline; /* Subrayar al pasar el mouse */
+            text-decoration: underline;
         }
         @media (max-width: 600px) {
             nav {
@@ -91,6 +96,7 @@
 
 <header>
     <h1>Manual de Reparación de Autos y Motos</h1>
+    <input type="text" id="buscador" placeholder="Buscar modelo..." onkeyup="buscarModelo()" />
 </header>
 
 <nav>
@@ -103,81 +109,67 @@
 
 <section id="modelos">
     <h2>Modelos y Marcas</h2>
-    
-    <input type="text" id="buscador" placeholder="Buscar modelo..." onkeyup="buscarModelo()" />
-
-    <h3><strong>Toyota</strong></h3>
+    <p>Encuentra los modelos más comunes para reparación según su marca:</p>
+    <h3>Autos</h3>
     <ul>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_corolla.pdf">Corolla</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_camry.pdf">Camry</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_hilux.pdf">Hilux</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_rav4.pdf">RAV4</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_yaris.pdf">Yaris</a></li>
-        <li class ="modelo"><a href="https://www.ejemplo.com/manual_avalon.pdf">Avalon</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_sienna.pdf">Sienna</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_4runner.pdf">4Runner</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_tacoma.pdf">Tacoma</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_tundra.pdf">Tundra</a></li>
+        <li class="modelo"><a href="https://www.toyota.com.ar/" target="_blank"><strong>Toyota:</strong> Corolla</a></li>
+        <li class="modelo"><a href="https://www.toyota.com.ar/" target="_blank"><strong>Toyota:</strong> Hilux</a></li>
+        <li class="modelo"><a href="https://www.ford.com.ar/" target="_blank"><strong>Ford:</strong> Focus</a></li>
+        <li class="modelo"><a href="https://www.ford.com.ar/" target="_blank"><strong>Ford:</strong> Ranger</a></li>
+        <li class="modelo"><a href="https://www.chevrolet.com.ar/" target="_blank"><strong>Chevrolet:</strong> Cruze</a></li>
+        <li class="modelo"><a href="https://www.chevrolet.com.ar/" target="_blank"><strong>Chevrolet:</strong> Onix</a></li>
+        <li class="modelo"><a href="https://www.volkswagen.com.ar/" target="_blank"><strong>Volkswagen:</strong> Golf</a></li>
+        <li class="modelo"><a href="https://www.volkswagen.com.ar/" target="_blank"><strong>Volkswagen:</strong> Polo</a></li>
+        <li class="modelo"><a href="https://www.honda.com.ar/" target="_blank"><strong>Honda:</strong> Civic</a></li>
+        <li class="modelo"><a href="https://www.honda.com.ar/" target="_blank"><strong>Honda:</strong> Fit</a></li>
+        <li class="modelo"><a href="https://www.nissan.com.ar/" target="_blank"><strong>Nissan:</strong> Sentra</a></li>
+        <li class="modelo"><a href="https://www.nissan.com.ar/" target="_blank"><strong>Nissan:</strong> Frontier</a></li>
+        <li class="modelo"><a href="https://www.renault.com.ar/" target="_blank"><strong>Renault:</strong> Sandero</a></li>
+        <li class="modelo"><a href="https://www.renault.com.ar/" target="_blank"><strong>Renault:</strong> Duster</a></li>
+        <li class="modelo"><a href="https://www.peugeot.com.ar/" target="_blank"><strong>Peugeot:</strong> 208</a></li>
+        <li class="modelo"><a href="https://www.peugeot.com.ar/" target="_blank"><strong>Peugeot:</strong> 3008</a></li>
+        <li class="modelo"><a href="https://www.fiat.com.ar/" target="_blank"><strong>Fiat:</strong> Cronos</a></li>
+        <li class="modelo"><a href="https://www.fiat.com.ar/" target="_blank"><strong>Fiat:</strong> Toro</a></li>
+        <li class="modelo"><a href="https://www.hyundai.com/ar/" target="_blank"><strong>Hyundai:</strong> Tucson</a></li>
+        <li class="modelo"><a href="https://www.hyundai.com/ar/" target="_blank"><strong>Hyundai:</strong> Kona</a></li>
+        <li class="modelo"><a href="https://www.kia.com/ar/" target="_blank"><strong>Kia:</strong> Sportage</a></li>
+        <li class="modelo"><a href="https://www.kia.com/ar/" target="_blank"><strong>Kia:</strong> Rio</a></li>
+        <li class="modelo"><a href="https://www.bmw.com.ar/" target="_blank"><strong>BMW:</strong> Serie 3</a></li>
+        <li class="modelo"><a href="https://www.bmw.com.ar/" target="_blank"><strong>BMW:</strong> X5</a></li>
+        <li class="modelo"><a href="https://www.mercedes-benz.com.ar/" target="_blank"><strong>Mercedes-Benz:</strong> Clase C</a></li>
+        <li class="modelo"><a href="https://www.mercedes-benz.com.ar/" target="_blank"><strong>Mercedes-Benz:</strong> Clase A</a></li>
+        <li class="modelo"><a href="https://www.audi.com.ar/" target="_blank"><strong>Audi:</strong> A4</a></li>
+        <li class="modelo"><a href="https://www.audi.com.ar/" target="_blank"><strong>Audi:</strong> Q5</a></li>
+        <li class="modelo"><a href="https://www.jeep.com.ar/" target="_blank"><strong>Jeep:</strong> Compass</a></li>
+        <li class="modelo"><a href="https://www.jeep.com.ar/" target="_blank"><strong>Jeep:</strong> Renegade</a></li>
     </ul>
-    
-    <h3><strong>Ford</strong></h3>
+    <h3>Motos</h3>
     <ul>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_fiesta.pdf">Fiesta</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_focus.pdf">Focus</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_mustang.pdf">Mustang</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_escape.pdf">Escape</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_explorer.pdf">Explorer</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_edge.pdf">Edge</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_f150.pdf">F-150</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_superduty.pdf">Super Duty</a></li>
+        <li class="modelo"><a href="https://www.honda.com.ar/" target="_blank"><strong>Honda:</strong> CB 125F</a></li>
+        <li class="modelo"><a href="https://www.honda.com.ar/" target="_blank"><strong>Honda:</strong> Wave 110</a></li>
+        <li class="modelo"><a href="https://www.yamaha.com.ar/" target="_blank"><strong>Yamaha:</strong> YBR 125</a></li>
+        <li class="modelo"><a href="https://www.yamaha.com.ar/" target="_blank"><strong>Yamaha:</strong> FZ 16</a></li>
+        <li class="modelo"><a href="https://www.suzuki.com.ar/" target="_blank"><strong>Suzuki:</strong> Gixxer 150</a></li>
+        <li class="modelo"><a href="https://www.suzuki.com.ar/" target="_blank"><strong>Suzuki:</strong> GSX-R1000</a></li>
+        <li class="modelo"><a href="https://www.kawasaki.com.ar/" target="_blank"><strong>Kawasaki:</strong> Ninja 250</a></li>
+        <li class="modelo"><a href="https://www.kawasaki.com.ar/" target="_blank"><strong>Kawasaki:</strong> Z400</a></li>
+        <li class="modelo"><a href="https://www.ducati.com/ar" target="_blank"><strong>Ducati:</strong> Monster 797</a></li>
+        <li class="modelo"><a href="https://www.ducati.com/ar" target="_blank"><strong>Ducati:</strong> Scrambler Icon</a></li>
+        <li class="modelo"><a href="https://www.bmw.com.ar/" target="_blank"><strong>BMW:</strong> G 310 R</a></li>
+        <li class="modelo"><a href="https://www.bmw.com.ar/" target="_blank"><strong>BMW:</strong> S 1000 RR</a></li>
+        <li class="modelo"><a href="https://www.harley-davidson.com/ar/" target="_blank"><strong>Harley-Davidson:</strong> Iron 883</a></li>
+        <li class="modelo"><a href="https://www.harley-davidson.com/ar/" target="_blank"><strong>Harley-Davidson:</strong> Street Glide</a></li>
+        <li class="modelo"><a href="https://www.ktm.com.ar/" target="_blank"><strong>KTM:</strong> Duke 200</a></li>
+        <li class="modelo"><a href="https://www.ktm.com.ar/" target="_blank"><strong>KTM:</strong> RC 390</a></li>
+        <li class="modelo"><a href="https://www.bajajauto.com.ar/" target="_blank"><strong>Bajaj:</strong> Pulsar NS200</a></li>
+        <li class="modelo"><a href="https://www.bajajauto.com.ar/" target="_blank"><strong>Bajaj:</strong> Dominar 400</a></li>
+        <li class="modelo"><a href="https://www.royalenfield.com.ar/" target="_blank"><strong>Royal Enfield:</strong> Classic 350</a></li>
+        <li class="modelo"><a href="https://www.royalenfield.com.ar/" target="_blank"><strong>Royal Enfield:</strong> Himalayan</a></li>
+        <li class="modelo"><a href="https://www.heromotocorp.com/ar/" target="_blank"><strong>Hero:</strong> Hunk 150</a></li>
+        <li class="modelo"><a href="https://www.heromotocorp.com/ar/" target="_blank"><strong>Hero:</strong> Xpulse 200</a></li>
     </ul>
-    
-    <h3><strong>Chevrolet</strong></h3>
-    <ul>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_spark.pdf">Spark</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_cruze.pdf">Cruze</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_silverado.pdf">Silverado</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_trailblazer.pdf">Trailblazer</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_equinox.pdf">Equinox</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_impala.pdf">Impala</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_camaro.pdf">Camaro</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_blazer.pdf">Blazer</a></li>
-    </ul>
-    
-    <h3><strong>Honda</strong></h3>
-    <ul>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_civic.pdf">Civic</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_accord.pdf">Accord</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_crv.pdf">CR-V</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_hrv.pdf">HR-V</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_odyssey.pdf">Odyssey</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_fit.pdf">Fit</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_pilot.pdf">Pilot</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_ridgeline.pdf">Ridgeline</a></li>
-    </ul>
-
-    <h3><strong>Yamaha</strong></h3>
-    <ul>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_yzf_r1.pdf">YZF-R1</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_yzf_r6.pdf">YZF-R6</a></ li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_mt07.pdf">MT-07</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_mt09.pdf">MT-09</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_fz09.pdf">FZ-09</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_xsr900.pdf">XSR900</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_yzf_r3.pdf">YZF-R3</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_yz250.pdf">YZ250</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_yz450f.pdf">YZ450F</a></li>
-    </ul>
-
-    <h3><strong>Honda Motos</strong></h3>
-    <ul>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_cb500.pdf">CB500</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_cbr600.pdf">CBR600</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_crf450.pdf">CRF450</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_grom.pdf">Grom</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_cb1000r.pdf">CB1000R</a></li>
-        <li class="modelo"><a href="https://www.ejemplo.com/manual_goldwing.pdf">Gold Wing</a></li>
-    </ul>
+</section>
+    <!-- Contenido de la sección de Modelos y Marcas -->
 </section>
 
 <section id="mantenimiento">
